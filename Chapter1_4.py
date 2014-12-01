@@ -1,4 +1,9 @@
-import random
-x = random.randint(1,6)
-y = random.choice(["apple", "banana", "cherry", "durian"])
-print (x, y)
+s = input("enter an integer:")
+try:
+    i = int(s)
+    print("valid integer entered:", i)
+except ValueError as err:
+    print(err)
+
+#https://docs.python.org/2/tutorial/errors.html
+	
